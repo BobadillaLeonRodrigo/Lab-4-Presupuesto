@@ -1,4 +1,5 @@
 import {useState} from 'react'
+//Creacion del CustomHook para el uso de ingremento de los botones
 const CustomHook = () => {
     const initialBudget:number = 1000;
     /* Declaren una constante de estado llamada “budget”, importe referencias e inicialícela con
