@@ -36,6 +36,11 @@ const globalStyles = StyleSheet.create({
         flex: 2,
         flexDirection: 'row',
     },
+    corazon: {
+        flex: 1, 
+        alignItems: 'flex-start', 
+        justifyContent: 'center',
+    },
 })
 
 export default globalStyles
