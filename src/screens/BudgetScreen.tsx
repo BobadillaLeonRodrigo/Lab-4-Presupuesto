@@ -23,18 +23,22 @@ const BudgetScreen = () => {
         setBudget(budget - value);
     } */
 
-    const {increase, decrease, initialBudget, budget} = CustomHook();
+    const {increase, decrease, initialBudget, budget,} = CustomHook();
+
+
 
     return (
     //Declaramos el encabezado de la aplicacion
-        <View style={globalStyles.container}>
-            <View style={{ flex: 2 }}>
-                <Text style={globalStyles.mainText} > Presupuesto: { initialBudget} </Text>
-                <Text style={[globalStyles.secondaryText]} > Mi presupuesto actual { budget} </Text>
-            </View>
-            <View style= {globalStyles.SumRes}>
-                <MyButton title='Sumar' onPress={() => increase(100)}/>
-                <MyButton title='Restar' onPress={() => decrease(50)}/>
+        <View style = {budget < initialBudget ? globalStyles.redBackground : globalStyles.whiteBackground}>
+            <View style={globalStyles.container}>
+                <View style={{ flex: 2 }}>
+                    <Text style={globalStyles.mainText} > Presupuesto: { initialBudget} </Text>
+                    <Text style={[globalStyles.secondaryText]} > Mi presupuesto actual { budget} </Text>
+                </View>
+                <View style= {globalStyles.SumRes}>
+                    <MyButton title='Sumar' onPress={() => increase(100)}/>
+                    <MyButton title='Restar' onPress={() => decrease(50)}/>
+                </View>
             </View>
         </View>
     )
