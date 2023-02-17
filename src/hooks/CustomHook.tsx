@@ -6,6 +6,8 @@ const CustomHook = () => {
     el valor de la constante “initialBudget”. */
     const [budget, setBudget] = useState(initialBudget);
     //Cree las funciones como a continuacion se describe
+
+
     const increase = (value: number=1) => {
         setBudget(budget + value);
     }

@@ -6,7 +6,7 @@ import globalStyles from './src/styles/global';
 
 const App = () => {
   return (
-    <View style={ globalStyles.corazon }>
+    <View style={ globalStyles.heart }>
       <Icon name="heart" size={50} color="#f50" />
       <BudgetScreen />
     </View>
