@@ -36,10 +36,21 @@ const globalStyles = StyleSheet.create({
         flex: 2,
         flexDirection: 'row',
     },
-    corazon: {
-        flex: 1, 
-        alignItems: 'flex-start', 
+    heart: {
+        flex: 1,
+        alignItems: 'flex-start',
         justifyContent: 'center',
+    },
+    redBackground: {
+            backgroundColor: 'red',
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center'
+    },
+    whiteBackground: {
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center'
     },
 })
 
